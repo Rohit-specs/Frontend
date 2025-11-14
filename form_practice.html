@@ -7,15 +7,15 @@
     <title>Just learning Form Part 2</title>
 </head>
 <body>
-    <h1>Form Practice 2</h1>
-    <form action="#">
+    <h1><u>Form Practice 2</u></h1>
+    <form action="#" method="post">
         <div>
             <label>Name: </label>
-        <input type="text" name="name" placeholder="Enter Your Name">
+        <input type="text" name="name" placeholder="Enter Your Name" value="Rohit">
         </div>
         <div>
             <label>Age: </label>
-            <input type="number" placeholder="Enter Your Age" name="age">
+            <input type="number" placeholder="Enter Your Age" name="age" value="18">
         </div>
         <div>
             <label>Email: </label>
@@ -27,7 +27,7 @@
         </div>
         <div>
             <label>DOB:</label>
-            <input type="date" name="dob" placeholder="Enter Your Date Of Birth">
+            <input type="date" name="dob" placeholder="Enter Your Date Of Birth" value="2025-09-03">
         </div>
         <div>
             <label>Gender:</label>
@@ -39,15 +39,16 @@
             <input type="radio" name="gender" value="other">
             <label>Other</label>
         </div>
+        <!-- checked attribute -> Initially check the checkbox -->
         <div>
             <label for="">Skills:</label><br>
             <input type="checkbox" value="html" name="skill">
             <label for="">HTML</label>
-            <input type="checkbox" value="ruby" name="skill">
+            <input type="checkbox" value="ruby" name="skill" checked>
             <label for="">Ruby</label>
-            <input type="checkbox" value="swift" name="skill">
+            <input type="checkbox" value="swift" name="skill" checked>
             <label for="">Swift</label>
-            <input type="checkbox" value="kotlin" name="skill">
+            <input type="checkbox" value="kotlin" name="skill" checked>
             <label for="">Kotlin</label>
 
         </div>
@@ -55,11 +56,13 @@
         <div>
             <label for="">Attach document</label>
             <input type="file" name="Document">
+            <!-- <input type="text" name="oldfile" value=""> -->
+            <!-- url from data base goes to the value -->
         </div>
 
         <div>
             <label for="">Your Can check your URL: </label>
-            <input type="url" name="url" placeholder="Drop down to check">
+            <input type="url" name="url" placeholder="Drop here to check">
         </div>
 
         <div>
@@ -76,9 +79,9 @@
             <label for="city">Select your city</label>
             <select name="city" id="city"> 
 <!-- some attributes:- 
-selected - to set a default value
-disabled - disabled selection unable to select that option
-multiple - To select multiple option -->
+selected -> to set a default value
+disabled -> disabled selection unable to select that option
+multiple -> To select multiple option -->
                 <option value="" selected disabled>Select City</option>
                 <option value="gurgaon">Gurgaon</option>
                 <option value="bageshwar">Bageshwar</option>
@@ -92,19 +95,26 @@ multiple - To select multiple option -->
             <textarea name="feedback" id="" cols="30" rows="4" placeholder="kuch bhi likh lo"></textarea>
         </div>
 
+        <div>
+            <label for="">how diciplaned you are</label>
+            <input type="range" name="range">
+        </div>
 
         <div>
             <input type="checkbox" name="agreement checkbox" value="Checked">
-            <label>I agree,Term and Conditions (Lorem ipsum dolor sit aet consectetur adipisicing elmit. Repudiandae, sapiente.)</label>
+            <label>I agree,Term and Conditions (Lorem ipsum dolor sit <br>aet consectetur adipisicing elmit. Repudiandae, sapiente.)</label>
         </div>
         <div>
             <!-- <label for="">Reset</label> -->
-            <input type="reset" value="Reset">
+            <input type="reset" value="clear">
+            <input type="submit" value="submit">
         </div>
         <!-- <div>
             <input type="button" value="reset">
         </div> -->
         <button>Submit</button>
+        <button disabled="disabled">this is for nothing</button>
+        <button type="button">Test</button>
     </form>
 </body>
 </html>
