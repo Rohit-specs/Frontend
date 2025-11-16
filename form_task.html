@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 Forms</title>
+</head>
+<body>
+    <header>
+        <h1>User Registration Form</h1>
+    </header>
+    <main>
+        <form action="#" method="get">
+            <div>
+                <label for="name">Full Name</label>
+                <input type="text" name="name" minlength="3" maxlength="50" required pattern="^[A-Za-z][A-Za-z\s\.]{1,49}$
+                " placeholder="Rohit kumar">
+            </div>
+            <div>
+                <label for="username">Username</label>
+                <input type="text" name="username" minlength="5" maxlength="15" required placeholder="">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,7}$
+                ">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" required minlength="6" maxlength="20" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$
+                ">
+            </div>
+            <div>
+                <label for="phone number">Phone number</label>
+                <input type="number" required pattern="^(?:\+91[\s-]?|91[\s-]?|0)?[6-9]\d{9}$
+                ">
+            </div>
+            <div>
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" value="male" required>
+                <label>Male</label>
+                <input type="radio" name="gender" value="female" required>
+                <label>Female</label>
+                <input type="radio" name="gender" value="other" required>
+                <label>Other</label>
+            </div>
+            <div>
+                <label for="dob">DOB</label>
+                <input type="date" min="18" max="60">
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <select name="country" required>
+                    <option value="" selected disabled>Select Country</option>
+                    <option value="India">India</option>
+                    <option value="United kingdom">United Kingdom</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Usa">USA</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="skills">Skill</label>
+                <input type="checkbox" name="skill" value="html">
+                <label for="">HTML</label>
+                <input type="checkbox" name="skill" value="css">
+                <label for="">CSS</label>
+                <input type="checkbox" name="skill" value="javascript">
+                <label for="">JavaScript</label>
+                <input type="checkbox" name="skill" value="react">
+                <label for="">React</label>
+                <input type="checkbox" name="skill" value="nodejs">
+                <label for="">Node.js</label>
+            </div>
+            <div>
+                <label for="">Website URL </label>
+                <input type="url" placeholder="Drop url here">
+            </div>
+            <div>
+                <label for="">Profile Picture</label>
+                <input type="file" name="image">
+            </div>
+            <div>
+                <label for="">About Yourself</label>
+                <textarea name="introduction" cols="30" rows="4"></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
