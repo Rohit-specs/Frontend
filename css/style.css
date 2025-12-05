@@ -1,0 +1,28 @@
+/* Type (element) selector
+    tag name like(h1,p,etc) is used 
+    style applied to all tags same tags */
+h1{
+    color: darkgreen;
+}
+
+/* Universal selector [*]
+    used to select all tags of page*/
+
+/* *{
+    color: red;
+} */
+
+/* ID selector [#]
+    one id value can used one time in a page*/
+
+#using_id_section{
+    color: blueviolet;
+}
+
+/* class selector [.] 
+    select all the element which have same class value*/
+
+.content{
+    color: lawngreen;
+}
+
