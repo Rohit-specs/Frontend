@@ -26,7 +26,6 @@ h1{
 .content{
     color: lawngreen;
 }
-
 ul,p{
     color: aqua;
 }
@@ -40,3 +39,10 @@ ul,p{
     color: darkviolet;
 }
 
+.child_selector>ul{
+    font-weight: bolder;
+}
+
+.adjecent_sibling_selector + p{
+    color: tomato;
+}
