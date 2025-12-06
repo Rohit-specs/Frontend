@@ -3,6 +3,7 @@
     style applied to all tags same tags */
 h1{
     color: darkgreen;
+    text-align: center;
 }
 
 /* Universal selector [*]
@@ -24,5 +25,18 @@ h1{
 
 .content{
     color: lawngreen;
+}
+
+ul,p{
+    color: aqua;
+}
+
+
+*[role=button]{
+    border-radius: 30%;
+}
+
+.descendant_selector span{
+    color: darkviolet;
 }
 
