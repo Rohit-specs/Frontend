@@ -1,6 +1,10 @@
 /* Type (element) selector
     tag name like(h1,p,etc) is used 
     style applied to all tags same tags */
+
+body{
+    background-color: black;
+}
 h1{
     color: darkgreen;
     text-align: center;
@@ -9,9 +13,9 @@ h1{
 /* Universal selector [*]
     used to select all tags of page*/
 
-/* *{
-    color: red;
-} */
+*{
+    color: rgb(186, 192, 191);
+}
 
 /* ID selector [#]
     one id value can used one time in a page*/
@@ -26,8 +30,8 @@ h1{
 .content{
     color: lawngreen;
 }
-ul,p{
-    color: aqua;
+li,p{
+    color: rgb(211, 9, 43);
 }
 
 
@@ -36,13 +40,18 @@ ul,p{
 }
 
 .descendant_selector span{
-    color: darkviolet;
+    color: rgb(149, 189, 58);
 }
 
-.child_selector>ul{
+.child_selector ul>li{
     font-weight: bolder;
+    color: orange;
 }
 
 .adjecent_sibling_selector + p{
-    color: tomato;
+    color: rgb(184, 72, 53);
+}
+
+h2~p{
+    color: darkslategrey;
 }
