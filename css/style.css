@@ -26,3 +26,34 @@ h1{
     color: lawngreen;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.child_selector>ul{
+    font-weight: bolder;
+}
+
+.adjecent_sibling_selector + p{
+    color: tomato;
+}
+
+
+
