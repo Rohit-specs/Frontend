@@ -11,12 +11,12 @@ span.box{
 }
 
 .min-content{
-    
+    width: min-content;
 }
 .max-content{
-
+    width: max-content;
 }
 .fit-content{
-    width: auto;
+    width: fit-content;
 }
 
