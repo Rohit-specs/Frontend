@@ -11,6 +11,9 @@
             width: 400px;
             margin-bottom: 20px;
         }
+        .syntax_box{
+          border: 1px solid rebeccapurple;
+        }
       .padding_1 {
         padding: 10px;
       }
@@ -23,6 +26,12 @@
       .padding_3 {
         padding: 10px, 12px, 12px, 10px;
       }
+      .inline_padding{
+        padding-inline: 10px;
+      }
+      .block_padding{
+        padding-block: 10px;
+      }
       </style>
   </head>
   <body>
@@ -30,9 +39,11 @@
           <h1><u>Padding</u></h1>
         </header>
         <main>
+          
             <div class="box">
-                <h2>All side padding in one line</h2>
-                <p>Syntax</p>
+                <h2>One liner padding</h2>
+                
+        <div class="syntax_box"><p>Syntax</p>
                 .padding_1 {
                   padding: 10px;
                 }<br>
@@ -44,8 +55,7 @@
                 }<br>
                 .padding_3 {
                   padding: 10px, 12px, 12px, 10px;
-                }<br>
-        <div class="syntax_box"></div>
+                }<br></div>
         <ul type="none">
           <li class="padding_1">One value : Same padding on all sides</li>
           <li class="padding_2">
@@ -60,6 +70,27 @@
             Four value : first value is padding of top <br />second value is for
             right <br />Third value decide the padding of bottom <br />Forth
             value decide the padding of left side
+          </li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>in-line padding & block-line padding</h2>
+        <div class="syntax_box">
+          <p>Syntax</p>
+          .inline_padding{
+            padding-inline: 10px;
+          } <br>
+          .block_padding{
+            padding-block: 10px;
+          }
+
+        </div>
+        <ul type="none">
+          <li class="inline_padding">
+            padding on left and right side
+          </li>
+          <li class="block_padding">
+            padding on top and bottom side
           </li>
         </ul>
       </div>
