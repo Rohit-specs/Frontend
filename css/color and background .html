@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color and Background</title>
     <style>
+        .box{
+            border: 2px double rgb(68, 19, 180);
+            border-radius: 20px;
+            margin-block: 20px;
+            padding: 8px;
+        }
         h1{
             text-shadow: 2px 2px 4px rgb(200, 42, 25), -8px -4px 10px rgb(35, 174, 179);
         }
         h2{
             color: rgb(58, 136, 51);
+            text-decoration: underline;
+            text-shadow: 3px 3px 6px tomato;
         }
         .paragraph1{
             color: brown;
@@ -23,6 +31,21 @@
         .paragraph4{
             color: #afce26;
         }
+        .paragraph5{
+            color: rgba(117, 13, 91, 0.534);
+        }
+        .syntax{
+            color: rgb(0, 133, 241);
+            display: inline;
+            padding-left: 50px;
+            font-weight: bold;
+            
+        }
+        .background{
+            /* background-color: #6b1bd477; */
+            background-image: url('css\cat_img.jpg');
+        }
+        
 
 
     </style>
@@ -32,12 +55,69 @@
         <h1><u>CSS - Color and Background</u></h1>
     </header>
     <main>
-        <h2><u>Color</u></h2>
-        <p class="paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt saepe laborum veritatis, accusamus aut?</p>
-        <p class="paragraph2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt saepe laborum veritatis, accusamus aut?</p>
-        <p class="paragraph3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt saepe laborum veritatis, accusamus aut?</p>
-        <p class="paragraph4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt saepe laborum veritatis, accusamus aut?</p>
-        <p class="paragraph5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt saepe laborum veritatis, accusamus aut?</p>
+        <h2>Color</h2>
+        <div class="box">
+            <p>Syntax:</p>
+            <div class="syntax">
+
+                .paragraph1{
+            color: brown;
+        }
+            </div>
+
+            <p class="paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt saepe laborum veritatis, accusamus aut?</p>
+        </div>
+        <div class="box">
+            <p>Syntax:</p>
+            <div class="syntax">
+                
+                .paragraph2{
+            color: rgb(182, 29, 196);
+        }
+            </div>
+            
+            <p class="paragraph2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt saepe laborum veritatis, accusamus aut?</p>
+        </div>
+        <div class="box">
+            <p>Syntax:</p>
+            <div class="syntax">
+                .paragraph3{
+            color: hsl(192, 62%, 55%);
+        }
+            </div>
+
+            <p class="paragraph3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt saepe laborum veritatis, accusamus aut?</p>
+        </div>
+        <div class="box">
+            <p>Syntax:</p>
+            <div class="syntax">
+                .paragraph4{
+            color: #afce26;
+        }
+            </div>
+
+            <p class="paragraph4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt saepe laborum veritatis, accusamus aut?</p>
+        </div>
+        <div class="box">
+            <p>Syntax:</p>
+            <div class="syntax">
+                .paragraph5{
+            color: rgba(117, 13, 91, 0.534);
+        }
+            </div>
+
+            <p class="paragraph5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt saepe laborum veritatis, accusamus aut?</p>
+        </div>
+
+        <h2>Background</h2>
+        <div class="box">
+            <p>Syntax:</p>
+            <div class="background">
+
+            </div>
+            <p class="paragraph6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta perspiciatis accusamus, repudiandae tempore nobis vero odit quibusdam aspernatur nemo vitae, nostrum quis iusto. Dicta, quam ipsum. Repellat quisquam suscipit voluptatum dignissimos facere libero veniam unde numquam soluta consequatur necessitatibus non ratione consectetur voluptates, mollitia ea. Omnis reiciendis eligendi ex perspiciatis.</p>
+        </div>
+        
     </main>
     
 </body>
