@@ -6,21 +6,27 @@
     <title>Styling a page</title>
     <style>
       .container {
-        padding: 10px;
+        padding: 30px;
         margin-block: 50px;
+        background-color: rgb(197, 188, 175);
       }
 
       .content {
         text-align: center;
+        width: 300px;
       }
 
       body .container_heading {
+        margin-top: 0%;
         background-image: linear-gradient(
             to left,
-            rgba(80, 0, 230, 0.5),
-            rgba(25, 25, 233, 0.5)
+            rgba(80, 0, 230, 0.7),
+            rgba(25, 25, 233, 0.7)
           ),
           url(images/evie_default_bg.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       img {
         width: 180px;
@@ -28,13 +34,18 @@
       }
       a {
         padding: 12px 20px;
-        background-color: #02ff17;
+        background-color: #027215;
         color: azure;
-        border-radius: 6px;
+        border-radius: 10px;
         cursor: pointer;
+        text-decoration: none;
       }
-      .get_started{
-        background-image: linear-gradient(to left,rgba(10, 10, 207, 0.788),rgba(111, 0, 255, 0.712));
+      .get_started {
+        background-image: linear-gradient(
+          to right,
+          rgba(10, 10, 207, 0.788),
+          rgba(111, 0, 255, 0.6)
+        );
       }
     </style>
   </head>
@@ -44,11 +55,11 @@
         <div class="content">
           <h1>A production-ready theme for your projects</h1>
           <p>
-              Evie is an MIT licensed template bundled with a minimal style guide to
-              build websites faster. It is extemely lightweight, customizable and
-              works perfectly on modern browsers.
-            </p>
-            <a href="#">Download</a>
+            Evie is an MIT licensed template bundled with a minimal style guide
+            to build websites faster. It is extemely lightweight, customizable
+            and works perfectly on modern browsers.
+          </p>
+          <a href="#">Download</a>
         </div>
       </div>
     </section>
