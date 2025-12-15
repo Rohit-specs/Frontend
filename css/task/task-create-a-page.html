@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Styling a page</title>
     <style>
+      @font-face {
+            font-family: 'Roboto';
+            src: url('../roboto/Roboto-VariableFont_wdth\,wght.ttf');
+        }
+       
+
       .container {
         padding: 30px;
-        margin-block: 50px;
-        background-color: rgb(211, 205, 198);
+        background-color: rgb(243, 241, 238);
       }
 
       .content {
@@ -18,7 +23,6 @@
       }
 
       body .container_heading {
-        margin-top: 0%;
         background-image: linear-gradient(
             to left,
             rgba(80, 0, 230, 0.85),
@@ -33,11 +37,11 @@
       img {
         width: 180px;
         height: auto;
-        padding-block: 30px;
+        padding-block: 40px;
       }
       a {
         padding: 12px 20px;
-        background-color: #027215;
+        background-color: #0b9e24;
         color: azure;
         border-radius: 20px;
         cursor: pointer;
@@ -61,12 +65,19 @@
         width: 500px;
         margin-top: 250px;
       }
+      .bg-white{
+        background-color: white;
+      }
+      h1,h3,h2{
+        font-family: 'Roboto',sans-serif;
+        font-weight: 600;
+      }
       
     </style>
   </head>
   <body>
     <section class="container container_heading">
-      <div class="section1heading">
+      <div class="hero">
         <div class="content">
           <h1>A production-ready theme for your projects</h1>
           <p>
@@ -80,7 +91,7 @@
     </section>
     <section class="container">
       <div class="content">
-        <div class="section2heading">
+        <div class="heading">
           <h2>Who can use Evie?</h2>
         </div>
         <p>
@@ -96,15 +107,7 @@
           easily create docs.
         </p>
         <img src="images/undraw_responsive.svg" alt="" />
-      </div>
-    </section>
-
-    <section class="container">
-      <div class="content">
-        <div class="section3heading">
-          <h3>Designers</h3>
-        </div>
-        <p>
+      <h3>Designers</h3><p>
           A website for your own freebies. Let the world download and use your
           artwork
         </p>
@@ -116,13 +119,16 @@
           A great starting point for your web application. Focus on your idea
           and execution
         </p>
+        </div>
+        
       </div>
+
     </section>
 
-    <section class="container">
+    <section class="container bg-white">
       <div class="content">
         <img src="images/undraw_browser.svg" alt="" />
-        <div class="section4heading">
+        <div class="heading">
           <h3>Natural styling with almost nothing to learn</h3>
         </div>
         <p>
@@ -137,7 +143,7 @@
     <section class="container">
       <div class="content">
         <img src="images/undraw_frameworks.svg" alt="" />
-        <div class="section5heading">
+        <div class="heading">
           <h3>Framework agnostic. Your front-end setup, your choice.</h3>
         </div>
         <p>
@@ -147,10 +153,10 @@
         </p>
       </div>
     </section>
-    <section class="container">
+    <section class="container bg-white">
       <div class="content">
         <img src="images/together.svg" alt="" />
-        <div class="section6heading">
+        <div class="heading">
           <h3>Ready for production or rapid prototyping</h3>
         </div>
         <p>
@@ -164,7 +170,7 @@
 
     <section class="container get_started">
       <div class="content">
-        <div class="section7heading">
+        <div class="heading">
           <h3>Get started now</h3>
         </div>
         <p>Grab the production version and begin your project instantly.</p>
