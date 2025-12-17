@@ -9,33 +9,56 @@
             box-sizing: border-box;
         }
         
-        /* ul+li::before{
-            content: " hahaha!";
-        }
-        ul+li::after{
-            content: " hehehe!";
-        } */
-
+        
         .styling_list .none{
-            list-style: none;
+            list-style: circle;
             padding: 0%;
             margin: 0;
         }
         .styling_list .style{
-            list-style-type: decimal upper-alpha; 
+            list-style-type: decimal; 
             /* it behave as a ordered list */
         }
         .styling_list .inside{
             list-style-position: inside;
-            /* Bullet outside text (it is default) */
+            /* Bullet inside text  */
         }
         .styling_list .outside{
             list-style-position: outside;
+            /* Bullets are outside the text (it is default)*/
+        }
+        .emogi ul{
+            list-style-image: url("assets/emogi/image.webp");
+        }
+        
+        .pseudo_element ul{
+            list-style: none;
+            padding-left: 0px;
+            list-style-position: inside;
         }
 
-
-
-
+        .pseudo_element ul li::before{
+            content: url("assets/emogi/cat_emogi.webp") ;
+        }
+        /* used to print words at first and last of element */
+        .pseudo_element ul li::after{
+            content: " hehehe!";
+        }
+        .box1{
+            position: static;
+            /* position static prevent any changes in position of element */
+            top: 40px;
+            background-color: cadetblue;
+        }
+        .box2{
+            position: relative;
+            /* it will go 45px to top from the its static(default) position
+            it may can overlap other elements
+            and its static position will be empty after it goes */
+            bottom: 45px;
+            background-color: rgb(95, 160, 117);
+        }
+        
     </style>
 </head>
 <body>
@@ -43,14 +66,52 @@
         <h1>List Position and Overflow</h1>
     </header>
     <main>
+        <h2>List styling</h2>
         <section class="styling_list">
             <ul>
+                <h3>Use of list-style property</h3>
                 <li class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis alias, at sapiente earum aliquam ullam repellat. Possimus, perspiciatis officiis.</li>
+                <h3>Use of list-style type property decimal is used to change ul to li</h3>
                 <li class="style">Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis alias, at sapiente earum aliquam ullam repellat. Possimus, perspiciatis officiis.</li>
+                <h3>Use of list-style-position property inside value</h3>
                 <li class="inside">Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis alias, at sapiente earum aliquam ullam repellat. Possimus, perspiciatis officiis.</li>
+                <h3>Use of list-style-position property outside value</h3>
                 <li class="outside">Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis alias, at sapiente earum aliquam ullam repellat. Possimus, perspiciatis officiis.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis alias, at sapiente earum aliquam ullam repellat. Possimus, perspiciatis officiis.</li>
+                
             </ul>
+        </section>
+        <section class="emogi">
+            <h2>Using emogi as bullets</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Deleniti perferendis ut voluptatem nobis.</li>
+                <li>Excepturi, molestias ut! Ipsa, odit?</li>
+                <li>Accusamus non provident modi perferendis!</li>
+                <li>Vero porro quibusdam quisquam itaque.</li>
+            </ul>
+        </section>
+        <section class="pseudo_element">
+            <h2>Pseudo elements</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, sequi.</li>
+                <li>Unde odio dolorem ab praesentium iure sequi recusandae autem qui?</li>
+                <li>Quia amet architecto laborum exercitationem doloremque temporibus magnam dolor qui.</li>
+            </ul>
+        </section>
+        <section class="position">
+            <h2>Position Property</h2>
+            <div class="box1">
+                <h3>Static property</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, maxime!</p>
+            </div>
+            <div class="box2">
+                <h3>Relative property</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, maxime!</p>
+            </div>
+            <div class="absolute">
+                <h3>Absolute property</h3>
+                
+            </div>
         </section>
     </main>
     
