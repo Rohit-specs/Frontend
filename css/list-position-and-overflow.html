@@ -123,9 +123,29 @@
         .scroll{
             overflow: scroll;
         }
+        .auto{
+            overflow: auto;
+        }
+        .x-y{
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        
         /* word-wrap(property) = break-world
         breaks the word to prevent horizontal scroll bar */
         
+        .overflow::-webkit-scrollbar{
+            width: 6px;
+            height: 6px;
+        }
+        .overflow::-webkit-scrollbar-track{
+            background-color: brown;
+            border-radius: 12px;
+        }
+        .overflow::-webkit-scrollbar-thumb{
+            background-color: rgb(241, 194, 133);
+            border-radius: 20px;
+        }
     </style>
 </head>
 <body>
@@ -179,8 +199,9 @@
             <div class="absolute">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque perspiciatis reiciendis molestias porro velit excepturi? </p>
             </div>
-            <h3>Fixed</h3>
+            
             <div class="fixed">
+                <h3 style="margin-bottom: 4px;">Position fixed</h3>
                 <img src="/css/cat_img.jpg" width="50px"
                  alt="this is cat image">
             </div>
@@ -195,15 +216,33 @@
             </div>
         </section>
         <section class="propertyoverflow">
+            <h2>Overflow Property</h2>
+            <h3>overflow visible (default value)</h3>
             <div class="overflow visible">
+                
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nihil maiores sequi quasi harum. Quam est necessitatibus quia recusandae ratione distinctio debitis delectus corrupti voluptates laudantium? Distinctio magnam deleniti iure.</p>
             </div>
-            <div class="overflow hidden" style="margin-top: 80px;">
+            
+            <div class="overflow hidden" style="margin-block: 120px;">
+                <h3>overflow hidden (hide the extra text which comes outside of parent)</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nihil maiores sequi quasi harum. Quam est necessitatibus quia recusandae ratione distinctio debitis delectus corrupti voluptates laudantium? Distinctio magnam deleniti iure.</p>
             </div>
+            <h3>overflow scroll (create a scroll doesn't matter if scroll needed or not)</h3>
             <div class="overflow scroll">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nihil maiores sequi quasi harum. Quam est necessitatibus quia recusandae ratione distinctio debitis delectus corrupti voluptates laudantium? Distinctio magnam deleniti iure.</p>
             </div>
+            <h3>Overflow Auto(scroll asigned if their is need)</h3>
+            <div class="overflow auto" style="margin-bottom: 100px;">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur quia quibusdam fugiat a odit impedit architecto recusandae, cumque rem commodi voluptate ullam tempora amet atque perferendis nemo repellat nisi consectetur?
+                </p>
+                
+            </div>
+            <h3>overflow-x and overflow-y</h3>
+            <div class="overflow x-y" style="margin-bottom: 100px;"><p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur quia quibusdam fugiat a odit impedit architectorecusandae,cumque rem commodi voluptate ullam tempora amet atque perferendis nemo repellat nisi consectetur?
+                </p></div>
+
         </section>
     </main>
     
