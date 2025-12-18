@@ -8,6 +8,9 @@
         *{
             box-sizing: border-box;
         }
+        /* body{
+            margin-bottom: 100px;
+        } */
         
         
         .styling_list .none{
@@ -58,6 +61,70 @@
             bottom: 45px;
             background-color: rgb(95, 160, 117);
         }
+        .absolute{
+            position: absolute;
+            /* it will go relative to ancistor 
+            if ancistor position is not static it position will acording to their ancistor
+            and thier position will be empty
+             */
+            right: 4px;
+            /* if we give left and right more than 20px it will create scroll bar */
+        }
+        .fixed{
+            position: fixed;
+            /* it is relative to document window 
+            it is fixed in the screen when we scroll*/
+            bottom: 30px;
+            right: 30px;  
+        }
+
+        .sticky{
+            position: sticky;
+            bottom: 50px;
+        }
+        .zindex{
+            position: relative;
+            left: 500px;
+        }
+        .tomato,.cyan,.mint{
+            width: 100px;
+            aspect-ratio: 1/1;
+            position: absolute;
+        }
+
+        .tomato{
+            background-color: tomato;
+            z-index: 1;
+            /* the low the z-index value the top the element will be */
+        }
+        .cyan{
+            background-color: cyan;
+            left: 20px;
+            top: 20px;
+            
+        }
+        .mint{
+            background-color: rgb(28, 233, 130);
+            left: 40px;
+            top: 40px;
+        }
+        .overflow{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(134, 154, 172);
+        }
+        .visible{
+            overflow: visible;
+            /* visible is the default value of overflow */
+        }
+        .hidden{
+            overflow: hidden;
+        }
+        .scroll{
+            overflow: scroll;
+        }
+        /* word-wrap(property) = break-world
+        breaks the word to prevent horizontal scroll bar */
         
     </style>
 </head>
@@ -100,17 +167,42 @@
         </section>
         <section class="position">
             <h2>Position Property</h2>
+            <h3>Static property</h3>
             <div class="box1">
-                <h3>Static property</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, maxime!</p>
             </div>
+            <h3>Relative property</h3>
             <div class="box2">
-                <h3>Relative property</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, maxime!</p>
             </div>
+            <h3>Absolute property</h3>
             <div class="absolute">
-                <h3>Absolute property</h3>
-                
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque perspiciatis reiciendis molestias porro velit excepturi? </p>
+            </div>
+            <h3>Fixed</h3>
+            <div class="fixed">
+                <img src="/css/cat_img.jpg" width="50px"
+                 alt="this is cat image">
+            </div>
+            <h3>Sticky Position</h3>
+            <div class="sticky">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ad, sed non animi deleniti magni praesentium quaerat quis vitae minima.</p>
+            </div>
+            <div class="zindex">
+                <div class="tomato"></div>
+                <div class="cyan"></div>
+                <div class="mint"></div>
+            </div>
+        </section>
+        <section class="propertyoverflow">
+            <div class="overflow visible">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nihil maiores sequi quasi harum. Quam est necessitatibus quia recusandae ratione distinctio debitis delectus corrupti voluptates laudantium? Distinctio magnam deleniti iure.</p>
+            </div>
+            <div class="overflow hidden" style="margin-top: 80px;">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nihil maiores sequi quasi harum. Quam est necessitatibus quia recusandae ratione distinctio debitis delectus corrupti voluptates laudantium? Distinctio magnam deleniti iure.</p>
+            </div>
+            <div class="overflow scroll">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nihil maiores sequi quasi harum. Quam est necessitatibus quia recusandae ratione distinctio debitis delectus corrupti voluptates laudantium? Distinctio magnam deleniti iure.</p>
             </div>
         </section>
     </main>
