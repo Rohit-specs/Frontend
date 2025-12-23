@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            height: 98vh;
+            width: 90wh;
+            border: 1px solid rgba(128, 128, 128, 0.5);
+            border-radius: 7px;
+            overflow: hidden;
+        }
+        .left_container{
+            background-color: rgba(0, 0, 0, 0.89);
+            justify-content: left;
+            width: 20%; 
+        }
+        .content{
+            padding: 10px 20px;
+            display: flex;
+            overflow: hidden;
+            flex-direction: column;
+            flex: 1;
+            border: 1px solid;
+            gap: 10px;
+        }
+        /* .header{
+            width: 100%;
+            border: 1px solid rgba(128, 128, 128, 0.5);
+            
+        } */
+        .box1{
+            background-color: rgba(128, 128, 128, 0.5);
+            width: 100px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left_container"></div>
+        <div class="content">
+            <!-- <div class="header">header</div> -->
+            <div class="box1">box1</div>
+            <div class="box2">
+                <div class="box2_left">
+                    <div class="box2_left_top">
+                        <div class="child_boxes">s</div>
+                        <div class="child_boxes">sdf</div>
+                        <div class="child_boxes">sdf</div>
+                    </div>
+                    <div class="box2_left_bottom">
+                        <div class="child_box1">sdf</div>
+                        <div class="child_box2">sdf</div>
+                    </div>
+
+                </div>
+                <div class="box2_right">
+                    <div class="box2_right_top">sdf</div>
+                    <div class="box2_right_bottom">sdf</div>
+                </div>
+
+            </div>
+            <div class="box3">
+                <div class="1"></div>
+                <div class="2">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                </div>
+                <div class="3"></div>
+                <div class="4"></div>
+                <div class="5"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
