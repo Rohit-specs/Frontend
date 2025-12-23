@@ -11,8 +11,8 @@
         .container{
             display: flex;
             flex-direction: row;
-            height: 98vh;
-            width: 90wh;
+            height: 100vh ;
+            width: 99vw;
             border: 1px solid rgba(128, 128, 128, 0.5);
             border-radius: 7px;
             overflow: hidden;
@@ -27,18 +27,32 @@
             display: flex;
             overflow: hidden;
             flex-direction: column;
-            flex: 1;
+            flex: 1 1 0;
             border: 1px solid;
             gap: 10px;
         }
+
+        .box{
+
+            background-color: rgba(128, 128, 128, 0.5);
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 20px;
+            min-height: 180px;
+        }
+
         /* .header{
             width: 100%;
             border: 1px solid rgba(128, 128, 128, 0.5);
             
         } */
         .box1{
-            background-color: rgba(128, 128, 128, 0.5);
-            width: 100px;
+            height: 120px;
+        }
+        .content .box2{
+            display: flex;
+            gap: 20;
         }
 
         
@@ -49,8 +63,8 @@
         <div class="left_container"></div>
         <div class="content">
             <!-- <div class="header">header</div> -->
-            <div class="box1">box1</div>
-            <div class="box2">
+            <div class="box1 box"></div>
+            <div class="box2 box" >
                 <div class="box2_left">
                     <div class="box2_left_top">
                         <div class="child_boxes">s</div>
@@ -69,7 +83,7 @@
                 </div>
 
             </div>
-            <div class="box3">
+            <div class="box3 box">
                 <div class="1"></div>
                 <div class="2">
                     <div class="box1"></div>
