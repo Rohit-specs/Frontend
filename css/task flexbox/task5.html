@@ -7,12 +7,13 @@
     <style>
         *{
             box-sizing: border-box;
+            margin: 0;
         }
         .container{
             display: flex;
             flex-direction: row;
             /* height: 98vh ; */
-            height: max-content;
+            /* height: max-content; */
             width: 100vw;
             border: 1px solid rgba(128, 128, 128, 0.5);
             border-radius: 7px;
@@ -28,8 +29,7 @@
             display: flex;
             overflow: hidden;
             flex-direction: column;
-            flex: 1 1 0;
-            border: 1px solid;
+            flex: 1 1 auto;
             row-gap: 40px;
         }
 
@@ -48,17 +48,16 @@
 
         }
         .box1,.box3,.box2{
-            height: 28%;
+            height: 20%;
         }
         .content .box2{
             display: flex;
-            /* gap: 20; */
             column-gap: 20px;
             flex-grow: 1;
             flex-direction: row;
-            background-color: none;
-            /* justify-content: space-between; */
+            justify-content: space-between;
             padding: 0;
+
         }
         .box2_left{
             display: flex;
@@ -71,7 +70,6 @@
             display: flex;
             width: 100%;
             padding: 8px;
-            height: 50%;
             border: 1px solid rgba(128, 128, 128, 5);
             border-radius: 12px;
             background-color: white;
@@ -85,12 +83,11 @@
             border: 1px solid rgba(128, 128, 128, 0.5);
             aspect-ratio: 1/1;
             border-radius: 8px;
-
         }
         .box2_left_bottom{
             display: flex;
             width: 80%;
-            /* height: 100%; */
+            height: calc((50%)-10px);
             padding: 8px;
             border: 1px solid rgba(128, 128, 128, 5);
             border-radius: 12px;
@@ -173,7 +170,6 @@
     <div class="container">
         <div class="left_container"></div>
         <div class="content">
-            <!-- <div class="header">header</div> -->
             <div class="box1 box"></div>
             <div class="box2 box" >
                 <div class="box2_left">
