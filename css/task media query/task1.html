@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <style>
+        :root{
+            --color:rgb(0, 102, 255);
+            --padding:20px;
+            --border_radius:12px;
+            --border:2px solid rgba(117, 117, 117, 0.596);
+            
+        }
+        .dashboard{
+            display: grid;
+            margin: 200px;
+            /* grid-template-rows: (40% 60%); */
+            padding: var(--padding);
+            border: var(--border);
+            border-radius: var(--border_radius);
+
+        }
+        .h1{
+            text-align: center;
+        }
+        .cards{
+            display: grid;
+            --column: 3;
+            grid-template-columns: (var(--column),1fr);
+    
+
+        }
+        .card{
+            padding: var(--padding);
+            border: var(--border);
+            border-radius: var(--border_radius);
+        }
+        .h2{
+            color: var(--color);
+        }
+        @media (max-width:992px){
+            :root{
+                --padding:16;
+                --border:1.5px;
+            }
+            .cards{
+                --column:2;
+            }
+        }
+        @media (max-width:576px){
+            :root{
+                text-align: center;
+                
+                --border:1px ;
+                --padding:12px;
+            }
+            .cards{
+                --column:1;
+
+            }
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <h1 class="title">Analytics Overview</h1>
+      <div class="cards">
+        <div class="card">
+          <h2>Users</h2>
+          <p>1,240</p>
+        </div>
+        <div class="card">
+          <h2>Revenue</h2>
+          <p>$8,430</p>
+        </div>
+        <div class="card">
+          <h2>Sessions</h2>
+          <p>12,320</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
