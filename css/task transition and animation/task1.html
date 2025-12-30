@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        .box{
+            width: 100px ;
+            aspect-ratio: 1/1;
+            background-color: tomato;
+        }
+        .box:hover{
+            transition-duration: 8s;
+            animation: moving-box 8s linear;
+        }
+        
+        @keyframes moving-box {
+            0% {transform: translate(0)}
+            15% {transform: translateX(200px)}
+            30% {transform: translateY(200px)}
+            45% {transform: translate(0);border-radius: 50%;}
+            60% {transform: translateX(-200px);border-radius: 50%;}
+            75% {transform: translateY(-200px); border-radius: 50%;}
+            90% {transform: translate(0); border-radius: 0%;}
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>
