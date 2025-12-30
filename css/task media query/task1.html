@@ -12,11 +12,11 @@
             --border:2px solid rgba(117, 117, 117, 0.596);
             --gap:15px;
             --column: 3;
-            --background_color : none
+            --background_color : none;
             --card_background : none;
             --text_color: none;
-        }
-        .dashboard{
+          }
+          .dashboard{
             display: grid;
             max-width: 1000px;
             margin: auto;
@@ -24,28 +24,33 @@
             border: var(--border);
             border-radius: var(--border_radius);
             gap: var(--gap);
-
-        }
-        .title{
+            background-color: var(--background_color);
+            
+          }
+          .title{
             
             text-align: center;
-        }
-        .cards{
+          }
+          .cards{
             display: grid;
             grid-template-columns:repeat((var(--column),1fr)) ;
             gap: var(--gap);
             padding: var(--padding);
-    
+            /* background-color: var(--background_color); */
+            
+            
+          }
+          .card{
+            color: var(--text_color);
+            background-color: var(--card_background);
 
-        }
-        .card{
             padding: var(--padding);
             border: var(--border);
             border-radius: var(--border_radius);
             box-shadow: 0px 3px 4px ;
 
         }
-        h2{
+        .cards h2{
             color: var(--color);
         }
         @media (max-width:992px){
