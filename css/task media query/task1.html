@@ -5,29 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 1</title>
     <style>
-        :root{
+      :root{
             --color:rgb(0, 102, 255);
             --padding:20px;
             --border_radius:12px;
             --border:2px solid rgba(117, 117, 117, 0.596);
-            
+            --gap:15px;
+            --column: 3;
+            --background_color : none
+            --card_background : none;
+            --text_color: none;
         }
         .dashboard{
             display: grid;
-            margin: 200px;
-            /* grid-template-rows: (40% 60%); */
+            max-width: 1000px;
+            margin: auto;
             padding: var(--padding);
             border: var(--border);
             border-radius: var(--border_radius);
+            gap: var(--gap);
 
         }
-        .h1{
+        .title{
+            
             text-align: center;
         }
         .cards{
             display: grid;
-            --column: 3;
-            grid-template-columns: (var(--column),1fr);
+            grid-template-columns:repeat((var(--column),1fr)) ;
+            gap: var(--gap);
+            padding: var(--padding);
     
 
         }
@@ -35,30 +42,36 @@
             padding: var(--padding);
             border: var(--border);
             border-radius: var(--border_radius);
+            box-shadow: 0px 3px 4px ;
+
         }
-        .h2{
+        h2{
             color: var(--color);
         }
         @media (max-width:992px){
             :root{
                 --padding:16;
                 --border:1.5px;
-            }
-            .cards{
+                --gap:12px;
                 --column:2;
+              }
+            
             }
-        }
-        @media (max-width:576px){
-            :root{
-                text-align: center;
-                
+            @media (max-width:576px){
+              :root{
                 --border:1px ;
                 --padding:12px;
-            }
-            .cards{
+                --gap:10px;
                 --column:1;
-
             }
+          
+        }
+        @media screen {
+         :root{
+           --background_color : rgba(46, 46, 46, 0.822);
+           --card_background : rgba(14, 13, 13, 0.822);
+           --text_color: rgb(255, 255, 255);
+         }
         }
 
     </style>
