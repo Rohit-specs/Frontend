@@ -1,7 +1,7 @@
 {
   "name": "project-practice",
   "version": "1.0.0",
-  "description": "Bootstrap using sass and vite as dependeny through node.js",
+  "description": "Bootstrap using sass and vite as dev dependencies through node.js",
   "keywords": [
     "Bootstrap v5",
     "learning bootstrap",
@@ -19,5 +19,8 @@
   "devDependencies": {
     "sass": "^1.97.3",
     "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
   }
 }
