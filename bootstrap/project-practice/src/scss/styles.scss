@@ -1,15 +1,18 @@
-// Import all of Bootstrap’s CSS
-$primary:#4691F2;
-
-$dark:#000000;
-
-$body-color:#6c6c6c;
 @import 'bootstrap/scss/functions';
 
-$custom-container-width:(
-    
-);
+@import './variables';
 
-$container-max-width:map-merge($map1: $container-max-width, $map2:$custom-container-width );
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/variables-dark';
 
-@import "bootstrap/scss/bootstrap";
+// CONTAINER MAPS
+$container-max-widths:map-merge($map1: $container-max-widths, $map2:$custom-container-width );
+
+
+@import 'bootstrap/scss/bootstrap';
+
+@import './custom';
+
+// IMPORT CUSTOM FILE
+
+@import './header';

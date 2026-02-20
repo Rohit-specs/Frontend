@@ -1,0 +1,7 @@
+@use './custom' as *;
+
+header{
+    .header-top{
+        @include header-top-bg;
+    }
+}
