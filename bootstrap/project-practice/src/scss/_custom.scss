@@ -2,6 +2,9 @@
 @mixin header-top-bg {
     background: linear-gradient(120deg, $primary 50%,  $dark 50%);
 }
+@mixin footer-Gradient{
+    background: linear-gradient();
+}
 
 a{
     color: inherit;
