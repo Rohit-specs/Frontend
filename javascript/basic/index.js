@@ -65,7 +65,18 @@
 
 // TYPE CONVERSION = change the datatype of a value to another
 
-let year = window.prompt("How old are you? ");
-year = Number(year)
+// let year = window.prompt("How old are you? ");
+// year = Number(year)
 
-console.log(year, typeof year);
+// console.log(year, typeof year);
+
+
+// const = a variable that can't be changed
+const PI = 3.14159;
+let radius;
+let circumference;
+
+// radius = window.prompt("Enter the radius of a circle: ");
+radius = Number(radius);
+circumference = 2 * PI * radius;
+console.log(circumference)
