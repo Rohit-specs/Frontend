@@ -80,3 +80,34 @@ let circumference;
 radius = Number(radius);
 circumference = 2 * PI * radius;
 console.log(circumference)
+
+//  =   assignment operator 
+//  ==  (compare if values are equal)
+//  === strict equality operator (compare if values & datatype are equal)
+//  !=  inequality operator
+//  !== strict inequality operator
+
+if (PI !== "3.17159"){
+    console.log("That is not pi")
+}
+else{
+    console.log("That is Pi")
+}
+
+// array = a variable like structure that can hold more than 1 value
+
+let fruits = ["apple","orange","papaya"]
+console.log(fruits[0]);
+console.log(fruits);
+fruits.pop()
+console.log(fruits);
+fruits.unshift("Mango") //move mango at the starting index 
+console.log(fruits);
+fruits.shift() //move mango at the starting index 
+console.log(fruits);
+console.log(fruits.indexOf("orange"));
+
+
+for(let fruit of fruits){
+    console.log(fruit);
+}
