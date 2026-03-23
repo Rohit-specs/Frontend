@@ -88,5 +88,4 @@ for (let i = 0; i < users_age.length; i++) {
         oldest = users_age[i];
     }
 }
-console.log(oldest)
-
+console.log("Oldest user:",oldest)
