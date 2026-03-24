@@ -31,6 +31,7 @@ const users = [
     tdRole.textContent = user.role;
 
     const tdActive = document.createElement("td");
+
     tdActive.textContent = user.active ? "active" : "inactive";
 
     tr.appendChild(tdId);
