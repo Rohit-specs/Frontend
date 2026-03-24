@@ -16,6 +16,7 @@ users.forEach(user => {
   } else {
     inactiveCount++
   }
+  
   const tdId = document.createElement("td");
   tdId.textContent = user.id
 
@@ -31,6 +32,7 @@ users.forEach(user => {
   tr.appendChild(tdactive)
 
   tableBody.appendChild(tr)
+
 
 });
 
