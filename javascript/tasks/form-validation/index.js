@@ -88,19 +88,6 @@ document.getElementById("form").addEventListener("submit", function (e) {
         feedBack.textContent = ""
     }
 
-    // genders.forEach(gender => {
-    //     if (gender.checked) {
-    //         isValid = false
-    //         not_checked
-    //         let feedBack = document.querySelector(".radio-group .errorFeedback");
-    //         feedBack.textContent = "Please select gender before submit"
-    //     }
-    //     else{
-    //         let feedBack = document.querySelector(".radio-group .errorFeedback");
-    //         feedBack.textContent = ""
-    //     }
-    // });
-
     if (isValid) {
         window.alert("Registration Successful")
     }
@@ -127,4 +114,13 @@ function validPassword(password) {
     password = password.trim()
     let passwordregex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
     return passwordregex.test(password);
+}
+
+// name = document.getElementById("name");
+// name.addEventListener('input',debouncing)
+function debouncing(func, delay) {
+    let timer;
+    return function(...args){
+        
+    }
 }

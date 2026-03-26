@@ -19,8 +19,9 @@
             margin-top: 3rem;
             max-width:600px;
             padding: 2rem;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
         }
-        .input-group{
+        .input-group, .group{
             margin-bottom: 1rem;
         }
         .input-group input{
@@ -33,11 +34,24 @@
         small{
             display: block;
         }
+        h1{
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .btn{
+            text-align: center;
+        }
+        button{
+            padding: .3125rem;
+        }
+        
     </style>
 </head>
 
 <body>
+    
     <form action="#" id="form">
+        <h1>Form validation</h1>
         <div class="input-group">
             <label for="name">Name </label>
             <input type="text" name="name" id="name">
@@ -64,7 +78,7 @@
             <small id="errorFeedback"></small>
         </div>
         <label>Skills</label>
-        <div class="check-box-group">
+        <div class="check-box-group group">
             <input type="checkbox" name="skill" value="c" id="c">
             <label for="c">C</label>
             <input type="checkbox" name="skill" value="python" id="python">
@@ -78,7 +92,7 @@
             <small id="errorFeedback"></small>
         </div>
         <label >Gender</label>  
-        <div class="radio-group">
+        <div class="radio-group group">
             
             <input type="radio" name="gender" value="male" id="male">
             <label for="male">Male</label>
@@ -88,7 +102,7 @@
             <label for="other">Other</label>
             <small id="errorFeedback"></small>
         </div>
-        <button type="submit">Submit</button>
+        <div class="btn"><button type="submit">Submit</button></div>
     </form>
 
     <script src="./index.js"></script>
