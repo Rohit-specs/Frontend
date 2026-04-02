@@ -90,6 +90,7 @@ document.getElementById("form").addEventListener("submit", function (e) {
 
     if (isValid) {
         window.alert("Registration Successful")
+        document.getElementsByid("form").reset()
     }
 })
 
@@ -118,9 +119,9 @@ function validPassword(password) {
 
 // name = document.getElementById("name");
 // name.addEventListener('input',debouncing)
-function debouncing(func, delay) {
-    let timer;
-    return function(...args){
+// function debouncing(func, delay) {
+//     let timer;
+//     return function(...args){
         
-    }
-}
+//     }
+// }

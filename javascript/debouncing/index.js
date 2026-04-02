@@ -10,7 +10,7 @@ document.getElementById("form").addEventListener("submit", function (e) {
 
     if (isValid) {
         console.log("Form submitted");
-        document.getElementsByid("form").reset()
+        document.getElementById("form").reset()
     };})
 const name = document.getElementById("name")
 const email = document.getElementById("email")
@@ -82,6 +82,7 @@ function validConfirmPassword(password) {
         feedBack.textContent = "Invalid Password"
     }
     else if (password != confirmPassword.value) {
+        isValid = false
         let feedBack = document.getElementById("confirmPassword").nextElementSibling;
         feedBack.textContent = "Password didn't match"
     }

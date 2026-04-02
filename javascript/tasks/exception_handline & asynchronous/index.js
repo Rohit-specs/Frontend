@@ -21,8 +21,7 @@ function insertData(users) {
             }
             address.push(user["address"][key]);
         }
-        address.join(", ")
-        // address = `${user["address"]["street"]}, ${user["address"]["suite"]} ${user["address"]["city"]}, ${user["address"]["zipcode0"]}`
+        address.join(", ");
         tr.innerHTML=`
             <td>${user["id"]}</td>
             <td>${user["name"]}</td>
